@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+
+
+:root{
+  --page-1-color:#941414;
+  --page-2-color:#851212;
+  --page-3-color:#771010;
+  --page-4-color:#923F3F;
+
+  --animate-speed:2s;
+
+}
+
+body{
+  font-family: 'Amiri', serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  }
+
+  /*page color*/
+#page-1{
+  background:url(./IMG/pexels-photo-1884326.jpeg) no-repeat center center/cover;
+}
+#page-2{
+  display: flex;
+  background: url(./IMG/pexels-photo-594579.jpeg)no-repeat center center/cover;
+}
+#page-3{
+  background: url(./IMG/jez-timms-207948-unsplash.jpg) no-repeat center center/cover;
+}
+#page-4{
+  background: url(./IMG/love.jpg) no-repeat center center/cover;
+}
+
+
+.page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1{
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+
+}
+.page p{
+  font-size: 1.3rem;
+
+}
+.btn{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: var(--page-3-color);
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+  border-radius:10%; 
+}
+.btn-4{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgba(0, 0,0, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+  border-radius:10%; 
+}
+.btn-2{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: var(--page-3-color);
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+  border-radius:10%; 
+}
+
+
+
+.btn:hover,.btn-dark:hover
+{
+  background: var(--page-1-color);
+  color: #fff;
+  border-radius:20%; 
+}
+.btn-2:hover,.btn-dark-2:hover
+{
+  background: var(--page-1-color);
+  color: #fff;
+  border-radius:20%; 
+}
+
+
+
+
+#page-1 h1{
+transform: translateY(-1200px);
+animation: heading var(--animate-speed) forwards ease-in;
+}
+#page-1 p{
+  transform: translateX(-2000px);
+ animation: P var(--animate-speed) forwards ease-in 2s;
+}
+
+@keyframes heading{
+  to{
+    transform: translateY(0);
+  }
+
+
+}
+@keyframes P{
+  to{
+    transform: translateX(0);
+  }
+
+
+}
+
+
+.lead{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  border: 1px #fff solid;
+  
+}
+
+
+.mp3{
+ display: flex;
+ height: 20px;
+ align-content: center;
+ justify-content: center;
+ padding: 1rem;
+ margin: 1rem;
+
+ 
+  
+}
+
+
+
+
+#slider {
+  width:720px;
+  height: 4000px;
+  overflow: hidden;
+}
+
+#slider .slides{
+  display: block;
+  width:6000px;
+  height: 4000px;
+  margin: 0;
+  padding: 0;
+}
+
+
+#slider .slide{
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height:4000px;
+}
+
+audio{
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+.box-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+ background:rgba(0, 0,0, 0.0.5);
+ width: 20%;
+ height: 20%;
+ 
+ 
+ /*transition-property: background,border-radius;
+ 
+ transition-timing-function: ease-in-out;
+ transition-duration: 2s;**/
+
+ transition: all 2s ease-in-out;
+ 
+}
+
+.box-1:hover{
+  background: url(./IMG/love.jpg) no-repeat center center/cover;
+  border-radius:10%; 
+ height: 30%;
+ width: 30%;
+ 
+ 
+ 
+}
