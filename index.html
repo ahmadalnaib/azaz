@@ -16,7 +16,6 @@
    <div>
      <a href="#page-2" class="btn">
         <i class="far fa-heart "></i>
-
      </a>
    </div>
   </section>
@@ -26,30 +25,17 @@
       <h1>انتي</h1>
       <p >ذات العينين السوداوين ذات العينين الصادقتين
           <audio controls autoplay>
-              <source src="./mp3/Alarab_Sherine_Hobboh-Ganna.mp3" type="audio/mpeg">
-              
+              <source src="./mp3/Alarab_Sherine_Hobboh-Ganna.mp3" type="audio/mpeg"> 
             </audio>
                 <a href="#page-1" class="btn btn-dark">
                     <i class="far fa-kiss-wink-heart"></i> <i class="fas fa-arrow-circle-up"></i>
-           
                 </a>
-               
                 <a href="#page-3" class="btn">
                     <i class="far fa-grin-hearts"></i> <i class="fas fa-arrow-circle-down"></i>
-             
                   </a>
                 
               </div>
-             
-     
-            
-       
-    
-
-      
-      
-     
-     
+          
      </section>
      <section id="page-3" class="page">
         <h1>انتي</h1>
@@ -80,12 +66,9 @@
         <div>
           <a href="#page-2" class="btn btn-dark">
               <i class="fab fa-gratipay"></i> <i class="fas fa-arrow-circle-up"></i>
-           
-     
           </a>
           <a href="#page-4" class="btn">
               <i class="fab fa-gratipay"></i> <i class="fas fa-arrow-circle-down"></i>
-       
             </a>
         </div>
        </section>
@@ -112,10 +95,40 @@
          </section>
         
          <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+       
+  <script >
+    $('.btn ').on('click',function(event){
+  if (this.hash !==''){
+    event.preventDefault();
+    const hash=this.hash;
+    $('html,body').animate(
+      {
+        scrollTop:$(hash).offset().top 
+      },
+      800
+    );
+  }
+  });
+  
+  
+    
+    
+  
+  
+  $('.lead').slideToggle().slideToggle(10000);
+  
+  
+  
+  setInterval (function(){
+    $('#slider .slides').animate({'margin-left':'-=720px'},1000);
+  },9000);
+  
+  
+  
+  </script>
  
 </body>
 </html>
